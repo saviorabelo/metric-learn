@@ -12,7 +12,8 @@ from __future__ import absolute_import
 import numpy as np
 from scipy.sparse.csgraph import laplacian
 from sklearn.covariance import graph_lasso
-from sklearn.utils.extmath import pinvh
+#from sklearn.utils.extmath import pinvh
+from scipy.linalg import pinvh
 from sklearn.utils.validation import check_array
 
 from .base_metric import BaseMetricLearner
